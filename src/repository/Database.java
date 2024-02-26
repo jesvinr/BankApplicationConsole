@@ -80,7 +80,7 @@ public class Database {
         ResultSet rs = preparedStatement.executeQuery();
         if(rs.next()) {
             int userAmount = rs.getInt("amount");
-            if (userAmount >= amount) return true;
+            return userAmount >= amount;
         }
         return false;
     }
@@ -90,8 +90,7 @@ public class Database {
         PreparedStatement preparedStatement = con.prepareStatement(query);
         preparedStatement.setString(1,acNum);
         ResultSet rs = preparedStatement.executeQuery();
-        if(rs.next()) return true;
-        return false;
+        return rs.next();
     }
 
     public boolean exchangeAmountDb(String fromAcNum, String toAcNum,int amount) throws SQLException {
