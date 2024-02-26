@@ -1,0 +1,21 @@
+Feautres:
+ Make transactions
+ account creation , login and management
+ money transfer
+
+
+ Notes:
+ class for individual account
+ pages for account creation , login and management
+
+ DashboardView: =>
+ UI and printing
+
+ options:
+ 1 Create account => name, age , amount, password, phone number. [account number automatically generated]
+ 2 Sign in  => [to see all information] => account number and password. [show user details]
+ 3 make transactions [get money of hand] => account number, password, money need to withdraw.
+ 4 fund transfer [transfer money from one account to another.]
+    => from account number,from password, to account number and money needed to sent. [Op1]
+    => To account number, money need to sent [putting money from hand]
+
