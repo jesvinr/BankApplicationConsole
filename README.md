@@ -34,32 +34,32 @@ src/
 
 |-- model/
 
-| |-- Account.java 
+|   |-- Account.java 
 
-| |-- Transaction.java
+|   |-- Transaction.java
 
 |-- view/
 
-| |-- CreateAccountView.java
+|   |-- CreateAccountView.java
 
-| |-- SignInView.java
+|   |-- SignInView.java
 
-| |-- WithdrawView.java
+|   |-- WithdrawView.java
 
-| |-- MoneyTransferView.java
+|   |-- MoneyTransferView.java
 
 |-- viewModel/
 
-| |-- CreateAccountViewModel.java
+|   |-- CreateAccountViewModel.java
 
-| |-- MoneyTransferViewModel.java
+|   |-- MoneyTransferViewModel.java
 
-| |-- WithdrawViewModel.java
+|   |-- WithdrawViewModel.java
 
 |-- Repository
 
-| |-- AccountDto.java
-| |-- Database.java
+|   |-- AccountDto.java
+|   |-- Database.java
 
 |-- Main.java
 
