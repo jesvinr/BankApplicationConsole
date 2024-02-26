@@ -6,7 +6,7 @@ import repository.Database;
 import java.sql.SQLException;
 
 public class SignUpViewModel {
-    private Database db = Database.getInstance();
+    private final Database db = Database.getInstance();
     private AccountDto account = new AccountDto();
 
 
