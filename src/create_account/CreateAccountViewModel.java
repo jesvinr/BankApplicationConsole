@@ -1,13 +1,11 @@
 package create_account;
 
 import repository.Database;
-import repository.StorageModel;
 import repository.AccountDto;
 
 import java.sql.SQLException;
 
 public class CreateAccountViewModel {
-    StorageModel storage = StorageModel.getInstance();
     Database db = Database.getInstance();
 
     boolean checkName(String name){
@@ -53,7 +51,6 @@ public class CreateAccountViewModel {
         createDto.setAmount(amount);
         createDto.setPhoneNumber(phoneNumber);
         createDto.setAccountNumber("IOB1000"+createDto.getName().charAt(0)+createDto.getAge());
-        storage.putAccount(createDto);
         db.putAccountDb(createDto);
         return createDto.getAccountNumber();
     }

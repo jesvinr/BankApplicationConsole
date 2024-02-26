@@ -45,8 +45,7 @@ public class Database {
             userAccount.setPhoneNumber(rs.getString("uphonenumber"));
             return userAccount;
         }
-        //System.out.println("No accounts found");
-        // if no account found
+        // if no accounts found
         return null;
     }
 
@@ -144,13 +143,6 @@ public class Database {
         preparedStatement1.execute();
         return true;
     }
-
-//    public static void main(String[] args) throws SQLException {
-//        Database db2 = Database.getInstance();
-//        System.out.println(db2.putAmount("IOB1000j24",500));
-//        System.out.println(db2.withdrawAmountDb("IOB1000j24",500));
-//
-//    }
 
     private int getAmountDb(String acNum) throws SQLException {
         int amount =0;
